@@ -13,12 +13,12 @@ type Project = {
 
 const projects: Record<Tab, Project[]> = {
     design: [
-        { name: "PassIt Branding", category: "Logo & UI", src: "/images/f.jpg" },
+        { name: "Zeni — Student Finance ", category: "Mobile App UI/UX Design", src: "/images/f.jpg" },
 
-        { name: "Cloud Migration Dashboard", category: "Product Design", src: "/images/y.jpg" },
-        { name: "Nexus Design System", category: "System Design", src: "/images/yy.jpg" },
-        { name: "Spotify Concept", category: "Visual Design", src: "/images/p.jpg" },
-        { name: "Geometric Icon Set", category: "Iconography", src: "/images/uuuu.jpg" },
+        { name: "GCB Mobile Banking App ", category: "UI/UX Redesign Case Study", src: "/images/y.jpg" },
+        { name: "Movie App Design", category: "System Design", src: "/images/yy.jpg" },
+        { name: "FitTrack – Smart Fitness", category: " Mobile App UI Design", src: "/images/p.jpg" },
+        { name: "Music App Design", category: "Visual Design", src: "/images/uuuu.jpg" },
         { name: "Enterprise AI Platform", category: "UI/UX Design", src: "/images/u.jpg" },
 
     ],
