@@ -13,7 +13,7 @@ type Project = {
 
 const projects: Record<Tab, Project[]> = {
     design: [
-        { name: "Zeni — Student Finance ", category: "Mobile App UI/UX Design", src: "/images/f.jpg" },
+        { name: "Zeni — Student Finance App ", category: "Mobile App UI/UX Design", src: "/images/f.jpg" },
 
         { name: "GCB Redesigned Mobile Banking App ", category: "UI/UX Redesign Case Study", src: "/images/y.jpg" },
         { name: "Movie App Design", category: "System Design", src: "/images/yy.jpg" },
