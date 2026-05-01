@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBehance, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -8,26 +10,26 @@ export default function Footer() {
     const socials = [
         {
             name: "Behance",
-            href: "https://www.behance.net/",
-            // Official Behance Blue
-            icon: "https://cdn.simpleicons.org/behance/1769ff"
+            href: "https://www.behance.net/oppongmpiani/",
+            icon: faBehance,
+            color: "#1769FF"
         },
         {
             name: "X",
-            href: "https://x.com/",
-            // Official X Black (using white/light for your dark theme)
-            icon: "https://cdn.simpleicons.org/x/ffffff"
+            href: "hhttps://x.com/iammariopop",
+            icon: faXTwitter,
+            color: "#1DA1F2"
         },
         {
             name: "LinkedIn",
-            href: "https://linkedin.com/",
-            // Official LinkedIn Blue
-            icon: "https://cdn.simpleicons.org/linkedin/0A66C2"
+            href: "https://www.linkedin.com/in/oppongmpiani/",
+            icon: faLinkedin,
+            color: "#0A66C2"
         },
     ];
 
     return (
-        <footer className="w-full bg-[#080808] text-[#f0ede8] py-16 border-t border-white/5 font-sans">
+        <footer className="w-full bg-[#000000] text-[#f0ede8] py-16 font-sans">
             <div className="max-w-4xl mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-12">
 
@@ -55,12 +57,7 @@ export default function Footer() {
                                 whileHover={{ y: -5, scale: 1.15 }}
                                 className="relative transition-all duration-300"
                             >
-                                <img
-                                    src={social.icon}
-                                    alt={social.name}
-                                    // Precise sizing: w-6 h-6 ensures LinkedIn is readable and matches others
-                                    className="w-6 h-6 object-contain"
-                                />
+                                <FontAwesomeIcon icon={social.icon} className="w-15 h-15" style={{ color: social.color }} />
                             </motion.a>
                         ))}
                     </div>
@@ -77,7 +74,7 @@ export default function Footer() {
                     </p>
                 </div>
 
-                <div className="mt-8 w-full h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+                
             </div>
         </footer>
     );

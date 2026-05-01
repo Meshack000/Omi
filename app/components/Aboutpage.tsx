@@ -59,7 +59,7 @@ export default function AboutPage() {
     };
 
     return (
-        <section id="about" className="relative min-h-screen bg-[#080808] font-sans text-[#f0ede8] flex items-center justify-center py-20 overflow-hidden">
+        <section id="about" className="relative min-h-screen bg-[#000000] font-sans text-[#f0ede8] flex items-center justify-center py-20 overflow-hidden">
             {/* Texture Layer */}
             <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-[url('/images/noise.png')]" />
 
