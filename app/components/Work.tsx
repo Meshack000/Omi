@@ -3,16 +3,24 @@
 import { useState } from 'react';
 import Image from 'next/image'; // Optimized for Next.js
 
-const projects = {
+type Tab = 'design' | 'development';
+type Project = {
+    name: string;
+    category: string;
+    src: string;
+    url?: string;
+};
+
+const projects: Record<Tab, Project[]> = {
     design: [
         { name: "PassIt Branding", category: "Logo & UI", src: "/images/f.jpg" },
-        
+
         { name: "Cloud Migration Dashboard", category: "Product Design", src: "/images/y.jpg" },
         { name: "Nexus Design System", category: "System Design", src: "/images/yy.jpg" },
         { name: "Spotify Concept", category: "Visual Design", src: "/images/p.jpg" },
         { name: "Geometric Icon Set", category: "Iconography", src: "/images/uuuu.jpg" },
         { name: "Enterprise AI Platform", category: "UI/UX Design", src: "/images/u.jpg" },
-        
+
     ],
     development: [
         {
@@ -73,12 +81,12 @@ const projects = {
 };
 
 export default function Work() {
-    const [activeTab, setActiveTab] = useState('design');
+    const [activeTab, setActiveTab] = useState<Tab>('design');
 
     return (
         <section id="work" className="bg-black px-6 md:px-16 lg:px-24 py-32 font-['Geist']">
             <div className="max-w-6xl mx-auto">
-                
+
                 {/* Header */}
                 <div className="flex flex-col items-center text-center mb-20">
                     <h2 className="text-[10px] font-bold text-neutral-600 uppercase tracking-[0.5em] mb-4">
@@ -89,25 +97,22 @@ export default function Work() {
                     </h3>
 
                     {/* Toggle Switch */}
-                    <div className="relative flex p-1 bg-white/[0.03] border border-white/[0.08] rounded-full backdrop-blur-2xl">
-                        <div 
-                            className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-white rounded-full transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] ${
-                                activeTab === 'development' ? 'left-[calc(50%+2px)]' : 'left-1'
-                            }`}
+                    <div className="relative flex p-1 bg-white/3 border border-white/8 rounded-full backdrop-blur-2xl">
+                        <div
+                            className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-white rounded-full transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] ${activeTab === 'development' ? 'left-[calc(50%+2px)]' : 'left-1'
+                                }`}
                         />
-                        <button 
+                        <button
                             onClick={() => setActiveTab('design')}
-                            className={`relative z-10 px-10 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-300 rounded-full ${
-                                activeTab === 'design' ? 'text-black' : 'text-neutral-500 hover:text-neutral-300'
-                            }`}
+                            className={`relative z-10 px-10 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-300 rounded-full ${activeTab === 'design' ? 'text-black' : 'text-neutral-500 hover:text-neutral-300'
+                                }`}
                         >
                             Design
                         </button>
-                        <button 
+                        <button
                             onClick={() => setActiveTab('development')}
-                            className={`relative z-10 px-10 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-300 rounded-full ${
-                                activeTab === 'development' ? 'text-black' : 'text-neutral-500 hover:text-neutral-300'
-                            }`}
+                            className={`relative z-10 px-10 py-3 text-xs font-bold uppercase tracking-widest transition-colors duration-300 rounded-full ${activeTab === 'development' ? 'text-black' : 'text-neutral-500 hover:text-neutral-300'
+                                }`}
                         >
                             Development
                         </button>
@@ -118,15 +123,15 @@ export default function Work() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
                     {projects[activeTab].map((project) => (
                         <div key={project.name} className="group">
-                            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-neutral-900 border border-white/[0.05] transition-all duration-500 group-hover:border-white/[0.12]">
-                                <Image 
-                                    src={project.src} 
+                            <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-neutral-900 border border-white/5 transition-all duration-500 group-hover:border-white/12">
+                                <Image
+                                    src={project.src}
                                     alt={project.name}
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                                 {/* Glass Overlay Shine */}
-                                <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/[0.05] to-transparent transition-transform duration-1000 ease-in-out" />
+                                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-linear-to-r from-transparent via-white/5 to-transparent transition-transform duration-1000 ease-in-out" />
                             </div>
 
                             <div className="mt-6">
