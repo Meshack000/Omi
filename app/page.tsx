@@ -1,7 +1,12 @@
+import Hero from "../app/components/Hero"
+import TechStack from "../app/components/TechStack";
+
+
 export default function Home() {
   return (
     <main>
-      <h1>Ommitech</h1>
+      <Hero />
+      <TechStack/>
     </main>
   );
 }
