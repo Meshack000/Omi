@@ -15,16 +15,61 @@ const projects = {
         
     ],
     development: [
-        { name: "School Management System", category: "React & Tailwind", src: "/images/school.jpg" },
-        { name: "Next.js E-commerce", category: "Full-Stack", src: "/images/shop.jpg" },
-        { name: "Portfolio Studio Site", category: "Frontend", src: "/images/portfolio-new.jpg" },
-        { name: "SaaS Analytics Engine", category: "Next.js & API", src: "/images/saas.jpg" },
-        { name: "Auth Flow Library", category: "TypeScript", src: "/images/auth.jpg" },
-        { name: "React Component Library", category: "UI Dev", src: "/images/components.jpg" },
-        { name: "Cloud Sync Utility", category: "Node.js", src: "/images/sync.jpg" },
-        { name: "AI Chat Interface", category: "React", src: "/images/chat.jpg" },
-        { name: "Responsive Admin Panel", category: "Tailwind CSS", src: "/images/admin.jpg" },
-    ]
+    { 
+        name: "School Management System", 
+        category: "React & Tailwind", 
+        src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop", 
+        url: "https://modern-school-erp.vercel.app/" 
+    },
+    { 
+        name: "Next.js E-commerce", 
+        category: "Full-Stack", 
+        src: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=800&auto=format&fit=crop", 
+        url: "https://demo.vercel.store/" 
+    },
+    { 
+        name: "Portfolio Studio Site", 
+        category: "Frontend", 
+        src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop", 
+        url: "https://playfair-studio.webflow.io/" 
+    },
+    { 
+        name: "SaaS Analytics Engine", 
+        category: "Next.js & API", 
+        src: "https://images.unsplash.com/photo-1551288049-bbbda536339a?q=80&w=800&auto=format&fit=crop", 
+        url: "https://tremor.so/" 
+    },
+    { 
+        name: "Auth Flow Library", 
+        category: "TypeScript", 
+        src: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop", 
+        url: "https://clerk.com/docs/components/overview" 
+    },
+    { 
+        name: "React Component Library", 
+        category: "UI Dev", 
+        src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=800&auto=format&fit=crop", 
+        url: "https://base-ui.com/react/components/" 
+    },
+    { 
+        name: "Cloud Sync Utility", 
+        category: "Node.js", 
+        src: "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=800&auto=format&fit=crop", 
+        url: "https://rclone.org/" 
+    },
+    { 
+        name: "AI Chat Interface", 
+        category: "React", 
+        src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop", 
+        url: "https://www.librechat.ai/" 
+    },
+    { 
+        name: "Responsive Admin Panel", 
+        category: "Tailwind CSS", 
+        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop", 
+        url: "https://tailadmin.com/demo" 
+    },
+]
 };
 
 export default function Work() {
