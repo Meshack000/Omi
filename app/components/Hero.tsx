@@ -1,4 +1,11 @@
 export default function Hero() {
+
+     const works = [
+                {name: 'Surelink', url: 'https://surelink-frontend.onrender.com/' },
+         { name: 'Nivida Hotel', url: 'https://nividahotel.netlify.app/' },
+         { name: 'Ommitech', url: 'https://ommitech.netlify.app/' },
+                ];
+
     return (
         <section
             id="hero"
@@ -27,18 +34,27 @@ export default function Hero() {
                 </p>
 
                 {/* Glass Pills */}
-                <div className="mt-12 flex flex-wrap justify-center items-center gap-3">
-                    <span className="text-[10px] font-bold text-neutral-600 uppercase tracking-[0.2em] w-full mb-3">Selected Works</span>
+               
 
-                    {['Surelink', 'Nivida Hotel', 'Ommitech'].map((work) => (
-                        <div
-                            key={work}
-                            className="px-6 py-2.5 rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-xl text-neutral-300 text-sm font-medium hover:bg-white/[0.07] hover:border-white/[0.15] transition-all duration-500 cursor-default"
+               
+                <div className="mt-12 flex flex-wrap justify-center items-center gap-3">
+                    <span className="text-[10px] font-bold text-neutral-600 uppercase tracking-[0.2em] w-full mb-3 text-center">
+                        Selected Works
+                    </span>
+
+                    {works.map((work) => (
+                        <a
+                            key={work.name}
+                            href={work.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-2.5 rounded-full border border-white/[0.08] bg-white/[0.03] backdrop-blur-xl text-neutral-300 text-sm font-medium hover:bg-white/[0.07] hover:border-white/[0.15] hover:text-white transition-all duration-500 cursor-pointer inline-block"
                         >
-                            {work}
-                        </div>
+                            {work.name}
+                        </a>
                     ))}
                 </div>
+           
 
                 
             </div>
