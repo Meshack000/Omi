@@ -51,7 +51,7 @@ export default function Navbar() {
                         onClick={() => setMenuOpen(false)}
                         className="text-5xl font-semibold text-white tracking-tighter hover:italic transition-all duration-300"
                     >
-                        Contact Me
+                        Contact Me!
                     </a>
                 </div>
 
