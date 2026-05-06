@@ -12,7 +12,7 @@ const tools = [
     { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
     { name: "React", icon: SiReact, color: "text-cyan-400" },
     { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
-    { name: "TypeScript", icon: SiTypescript, color: "text-blue-400" },
+    
     { name: "Figma", icon: SiFigma, color: "text-pink-400" },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-300" },
     { name: "Framer Motion", icon: SiFramer, color: "text-purple-400" },

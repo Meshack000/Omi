@@ -61,7 +61,7 @@ export default function Navbar() {
                     {/* Email */}
                     <div className="space-y-2">
                         <span className="text-[9px] font-bold text-neutral-600 uppercase tracking-[0.3em]">Email</span>
-                        <a href="mailto:hello@omi.design" className="block text-lg text-white font-medium hover:text-neutral-400 transition-colors">
+                        <a href="mailto:oppongmeshack54@gmail.com" className="block text-lg text-white font-medium hover:text-neutral-400 transition-colors">
                             oppongmeshack54@gmail.com
                         </a>
                     </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
                     {/* Phone */}
                     <div className="space-y-2">
                         <span className="text-[9px] font-bold text-neutral-600 uppercase tracking-[0.3em]">Phone</span>
-                        <a href="tel:+233000000000" className="block text-lg text-white font-medium">
+                        <a href="tel:+233240221242" className="block text-lg text-white font-medium">
                             +233 (0) 24 022 1242
                         </a>
                     </div>
