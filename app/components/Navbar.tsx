@@ -86,7 +86,7 @@ export default function Navbar() {
                     <div className="pt-8 border-t border-white/10 flex justify-center gap-8 text-[10px] font-bold text-neutral-500 uppercase tracking-widest">
                         <a href="https://www.linkedin.com/in/oppongmpiani/" className="hover:text-white transition-colors">LinkedIn</a>
                         <a href="https://github.com/Meshack000" className="hover:text-white transition-colors">GitHub</a>
-                        <a href="https://www.behance.net/oppongmeshack" className="hover:text-white transition-colors">Behance</a>
+                        <a href="https://www.behance.net/oppongmeshack" className="hover:text-white transition-colors"> Behance</a>
                     </div>
                 </div>
             </div>

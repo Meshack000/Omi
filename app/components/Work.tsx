@@ -35,7 +35,12 @@ const projects: Record<Tab, Project[]> = {
         { name: "Enterprise AI Platform", category: "UI/UX Design", src: "/images/u.jpg", description: "B2B dashboard for monitoring large-scale AI model performance and data sets." },
     ],
     development: [
-        { name: "School Management System", category: "React & Tailwind", src: "/images/school.jpg", url: "https://modern-school-erp.vercel.app/", description: "A full-scale ERP for educational institutions." },
+        { name: "Hotel Website", category: "React & Tailwind", src: "/images/school.jpg", url: "https://nividahotel.netlify.app/", description: "A full-scale ERP for educational institutions." },
+
+        { name: "Startup Management System", category: "React & Tailwind", src: "/images/school.jpg", url: "https://ommitech.netlify.app/", description: "A full-scale ERP for educational institutions." },
+
+        { name: "Portfolio Website", category: "React & Tailwind", src: "/images/school.jpg", url: "https://modern-school-erp.vercel.app/", description: "A full-scale ERP for educational institutions." },
+        
         // ... (Keep your other development projects here)
     ]
 };
